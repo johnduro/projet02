@@ -1,0 +1,14 @@
+body
+{
+	color: black;
+	background-color: #6699FF;
+	background: url(images/pagecouv.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+#dat_logo
+{
+	position: relative;
+	left: 31%;
+}
