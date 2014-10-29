@@ -1,14 +1,52 @@
+
 body
 {
-	color: black;
-	background-color: #6699FF;
+	/* text-align: center; */
+/* 	color: black; */
+/* 	background-color: #6699FF; */
+/* 	background: url(images/pagecouv.jpg); */
+/* 	background-repeat: no-repeat; */
+/* 	background-position: center top; */
+}
+
+#wrapper_total
+{
 	background: url(images/pagecouv.jpg);
 	background-repeat: no-repeat;
-	background-position: center top;
+	/* text-align: center; */
+	width: 595px;
+	height: 842px;
+	margin: 0 auto;
+}
+
+#dat_header
+{
+	width: 100%;
+	height: 15%;
+}
+
+#logo_div
+{
+	width:30%;
+	height:100%;
 }
 
 #dat_logo
 {
-	position: relative;
-	left: 31%;
+	/* position: relative; */
+	/* left: 5%; */
+	height: 100%;
+	width: 100%;
+}
+
+#dat_body
+{
+	width: 100%;
+	height: 70%;
+}
+
+#dat_footer
+{
+	width: 100%;
+	height: 15%;
 }
