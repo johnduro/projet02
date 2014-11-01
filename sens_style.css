@@ -59,19 +59,13 @@ body
 	height: 873px;
 }
 
-#dat_footer
-{
-	width: 1024px;
-	height: 90px;
-}
-
 #nav_bar
 {
     position: relative;
     top: 10px;
     left: 10px;
     background-color: white;
-     width: 647px;
+    width: 647px;
     height: 35px;
 }
 
@@ -148,8 +142,60 @@ li:hover li a:hover
    background: #23607c;
 }
 
+.custom-light-blue
+{
+    background: #41738c;
+}
+
 .button-height
 {
     height: 35px;
 
+}
+
+#dat_footer
+{
+	width: 1024px;
+	height: 90px;
+}
+
+#footer_div
+{
+	width: 970px;
+	position: relative;
+	height: 70px;
+	left: 27px;
+	display: block;
+}
+
+.my-font
+{
+	font-family: Arial;
+	color: white;
+}
+
+#follow_div
+{
+	float: left;
+	height: 70px;
+	width: 100px;
+	position: relative;
+	left: 300px;
+	top: 5px;
+}
+
+#parter
+{
+	float: left;
+	position: relative;
+	left: 400px;
+	top: 5px;
+}
+
+#legal
+{
+	float: left;
+	position: relative;
+	left: 500px;
+	top: 10px;
 }
