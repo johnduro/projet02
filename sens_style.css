@@ -20,6 +20,7 @@ body
 	width: 1024px;
 	height: 1146px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .custom-dark-blue
@@ -33,38 +34,20 @@ body
     background: #46768c;
 }
 
-#box-2-4
+.custom-clear-blue
 {
-	position: relative;
-	/* float: left; */
-	left: 344px;
-	top: -328px;
+	background: #0680b1;
 }
 
-#box-3-4
+.custom-orange
 {
-	position: relative;
-	/* float: left; */
-	left: 512px;
-	top: -496px;
+	background: #bd672e;
 }
 
-#box-4-4
+.custom-green
 {
-	position: relative;
-	/* float: left; */
-	left: 680px;
-	top: -664px;
+	background: #13806d;
 }
-
-#box-5-4
-{
-	position: relative;
-	/* float: left; */
-	left: 848px;
-	top: -832px;
-}
-
 
 .my-font
 {
@@ -163,6 +146,7 @@ ul li a
 {
     padding: 1px 0px 0px 0px;
     display: none;
+	z-index: 999;
 }
 
 .custom-ml
@@ -266,7 +250,8 @@ li:hover li a:hover
 	width: 160px;
 	border-style: solid;
 	border-width: 4px;
-	border-color: red;
+	border-color: #e3e5e4;
+	/* border-color: red; */
 	/* float: left; */
 }
 
@@ -276,7 +261,11 @@ li:hover li a:hover
 	width: 328px;
 	border-style: solid;
 	border-width: 4px;
-	border-color: red;
+	border-color: #e3e5e4;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	/* border-color: red; */
 	/* float: left; */
 }
 
@@ -302,6 +291,12 @@ li:hover li a:hover
 	left: 8px;
  	float: left;
 	top: 8px;
+}
+
+#box-2-1:hover
+{
+	background: url(images/PLANfondOrangel-01.jpg);
+	background-size: contain;
 }
 
 #box-3-1
@@ -386,6 +381,14 @@ li:hover li a:hover
 	float: left;
 	left: 8px;
 	top: 8px;
+	vertical-align: middle;
+	line-height: 328px;
+}
+
+#box-3-2:hover
+{
+	background: url(images/fond_design.png);
+	background-size: contain;
 }
 
 #box-1-3
@@ -452,6 +455,44 @@ li:hover li a:hover
 	left: 8px;
 	top: 8px;
 }
+
+#box-1-4:hover
+{
+	background: url(images/PLANfondVert-01.jpg);
+	background-size: contain;
+}
+
+/* #box-2-4 */
+/* { */
+/* 	position: relative; */
+/* 	/\* float: left; *\/ */
+/* 	left: 344px; */
+/* 	top: -328px; */
+/* } */
+
+/* #box-3-4 */
+/* { */
+/* 	position: relative; */
+/* 	/\* float: left; *\/ */
+/* 	left: 512px; */
+/* 	top: -496px; */
+/* } */
+
+/* #box-4-4 */
+/* { */
+/* 	position: relative; */
+/* 	/\* float: left; *\/ */
+/* 	left: 680px; */
+/* 	top: -664px; */
+/* } */
+
+/* #box-5-4 */
+/* { */
+/* 	position: relative; */
+/* 	/\* float: left; *\/ */
+/* 	left: 848px; */
+/* 	top: -832px; */
+/* } */
 
 #box-2-4
 {
@@ -555,4 +596,14 @@ li:hover li a:hover
 	/* float: left; */
 	left: 848px;
 	top: -1336px;
+}
+
+.big-box-orange
+{
+	margin-top: 145px;
+}
+
+.big-box-green
+{
+	margin-bottom: 130px;
 }
