@@ -4,14 +4,15 @@
     <head>
         <meta charset="utf8">
         <title>Sens Urbains</title>
-        <link href="sens_style.css" rel="stylesheet">
+        <link href="<?php echo $path['general_css'];?>" rel="stylesheet">
+        <!-- <link href="sens_style.css" rel="stylesheet"> -->
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
 
     <body>
         <div id="wrapper_total">
             <div id="dat_header">
-                <a href="index.php" id="logo_link" alt="Sens Urbains">
+                <a href="<?php echo $path['home'];?>" id="logo_link" alt="Sens Urbains">
                     <h1 id="logo_div">sensurbains urbanisme architecture paysage</h1>
                 </a>
 				<div id="nav_div">
@@ -29,7 +30,7 @@
 								<a  class="center-div" href="">LE COLLECTIF</a>
 							</li>
 							<li class="button-height custom-dark-blue  nav-hover custom-ml" style="width: 120px">
-								<a class="center-div" href="">CONTACT</a>
+								<a class="center-div" href="<?php echo $path['contact'];?>">CONTACT</a>
 							</li>
 							<li class="button-height custom-dark-blue nav-hover custom-ml" style="width:239px " >
 								<a class="center-div" href="">Télécharger la plaquette <i class="fa fa-download"></i></a>
