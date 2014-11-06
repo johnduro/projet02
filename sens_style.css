@@ -63,6 +63,12 @@ body
 	background-color: rgba(227, 229, 228, 0.8);
 }
 
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
 /*
 ** *********************** HEADER
 */
@@ -169,7 +175,7 @@ li:hover .item-list
 li:hover .item
 {
     float: none;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 /* li:hover a */
@@ -607,3 +613,42 @@ li:hover li a:hover
 {
 	margin-bottom: 130px;
 }
+
+/*
+** *********************** CONTACT
+*/
+
+#contact_text_div
+{
+	height: 857px;
+	width: 341px;
+	color: white;
+	position: relative;
+	left: 8px;
+	top: 8px;
+	float: left;
+    font-family: Arial, Verdana;
+    font-size: 18px;
+    text-decoration: none;
+	/* text-indent: 15px; */
+	/* text-indent: each-line; */
+}
+
+.contact_text
+{
+	padding-left: 15px;
+}
+
+#contact_image
+{
+	background: url(images/airedurabel1_copie.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 857px;
+	width: 659px;
+	position: relative;
+	float: left;
+	left: 16px;
+	top: 8px;
+}
+
