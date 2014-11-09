@@ -95,6 +95,8 @@ a
 	width: 307px;
 	height: 183px;
 	float: left;
+	position: relative;
+	left: 30px;
 }
 
 #nav_div
@@ -104,8 +106,10 @@ a
 	background-color: #41738c;
 	float: left;
 	position: relative;
-	top: 128px;
-	left: 10px;
+	/* top: 128px; */
+	top: 133px;
+	/* left: 10px; */
+	left: 50px;
 }
 
 #nav_bar
@@ -213,10 +217,11 @@ li:hover li a:hover
 
 #footer_div
 {
-	width: 970px;
+	width: 1024px;
+	/* width: 970px; */
 	position: relative;
 	height: 70px;
-	left: 27px;
+	/* left: 27px; */
 	display: block;
 }
 
@@ -506,6 +511,14 @@ li:hover li a:hover
 	/* float: left; */
 	left: 344px;
 	top: -328px;
+	background: url(images/09-NB.jpg);
+	background-size: contain;
+}
+
+#box-2-4:hover
+{
+	background: url(images/09-C.jpg);
+	background-size: contain;
 }
 
 #box-3-4
@@ -652,3 +665,32 @@ li:hover li a:hover
 	top: 8px;
 }
 
+/*
+** *********************** COLLECTIF
+*/
+
+#collectif_sidebar
+{
+	height: 857px;
+	width: 341px;
+	color: white;
+	position: relative;
+	left: 8px;
+	top: 8px;
+	float: left;
+    font-family: Arial, Verdana;
+    font-size: 18px;
+    text-decoration: none;
+	/* text-indent: 15px; */
+	/* text-indent: each-line; */
+}
+
+.box-collectif
+{
+	width: 285px;
+	/* width: 341px; */
+	height: 285px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: red;
+}
