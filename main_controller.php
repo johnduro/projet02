@@ -12,6 +12,7 @@ $baseUrl = "/sensurbain/";
 /* echo "ici"; */
 $path = array();
 $path["general_css"] = $baseUrl."sens_style.css";
+$path['jquery'] = $baseUrl."js/jquery-1.11.1.min.js";
 $path["home"] = $baseUrl;
 $path["contact"] = $baseUrl."contact/";
 $path["leCollectif"] = $baseUrl."le-collectif/";
@@ -37,4 +38,5 @@ else if (preg_match("#contact/$#isU", $_SERVER['REDIRECT_URL']))
 else
 {
     header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
+    require 'error404.php';
 }
