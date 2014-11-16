@@ -106,11 +106,13 @@ a
 
 #logo_div
 {
-	background: url(images/logo.png);
-	/* background: url(images/logo-sens-urbain-01.png); */
+	/* background: url(images/logo.png); */
+	background: url(images/logo-sens-urbain-02.png);
 	background-repeat: no-repeat;
+	background-size: 250px 163px; /*NEW*/
 	width: 307px;
-	height: 183px;
+	/* height: 183px; */
+	height: 165px;
 	text-indent: -9999px;
 }
 
@@ -791,6 +793,11 @@ li:hover li a:hover
 	background-size: contain;
 }
 
+#name-first
+{
+	color: #bd672e;
+}
+
 #membre-first:hover .membre-overlay
 {
 	display: block;
@@ -810,6 +817,11 @@ li:hover li a:hover
 	background: url(images/BEA.jpg);
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+#name-second
+{
+	color: #0680b1;
 }
 
 #membre-second:hover .membre-overlay
@@ -833,6 +845,11 @@ li:hover li a:hover
 	background-size: contain;
 }
 
+#name-third
+{
+	color: #13806d;
+}
+
 #membre-third:hover .membre-overlay
 {
 	display: block;
@@ -841,6 +858,10 @@ li:hover li a:hover
 .membre-overlay
 {
 	display: none;
+	top: 60px;
+	left: 5px;
+	position: absolute;
+	/* vertical-align: middle; */
 }
 
 /*
