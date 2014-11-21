@@ -14,7 +14,7 @@
 	<div id="collectif-content-membres" class="collectif-content">
 		<div id="membre-first" class="box-members">
 			<div class="membre-overlay">
-				<p id="name-first">
+				<p class="name-first">
 					<b>
 					ALDARA LAMAS MONTES<br/>
 					Ingénieur agronome<br/>
@@ -25,7 +25,7 @@
 		</div>
 		<div id="membre-second" class="box-members">
 			<div class="membre-overlay">
-				<p id="name-second">
+				<p class="name-second">
 					<b>
 					BEATRICE LATZ<br/>
 					Urbaniste et<br/>
@@ -36,13 +36,94 @@
 		</div>
 		<div id="membre-third" class="box-members">
 			<div class="membre-overlay">
-				<p id="name-third">
+				<p class="name-third">
 					<b>
-					PAG PAG PAG<br/>
+					PIERRE-ANTOINE GRUAU<br/>
 					Architecte et<br/>
 					Autre chose
 					</b>
 				</p>
+			</div>
+		</div>
+		<div id="text-membre-first" class="collectif-membre">
+			<div class="box-text-membre">
+				<span class="name-first">Aldara LAMAS MONTES</span>
+				a effectué ses études en Espagne. Ingénieur en
+agroalimentaire, en agronomie et diplômée du master management de la qualité, gestion
+de la prévention et de l’environnement elle devient officiellement architecte paysagiste en
+2010. Ses connaissances techniques mais également sa sensibilté et sa connaissance
+des végétaux en font une conceptrice alerte des enjeux environnementaux, réaliste
+quand aux contingences techniques d’un projet mais surtout une virtuose des palettes
+végétales qui joue des couleurs, des textures et de leur pérennité.
+Elle s’est notamment investie sur des projets certifié BREEAM et HQE pour des projets
+de centres commerciaux et de siège social et prit en charge la conception de parcs et la
+requalification d’espaces publics (voirie et quartier ANRU) et ceux dans des contextes
+urbains et climatiques variés.<br/>
+				<p class="name-first">
+				<b>Compétences spécifiques</b><br/>
+				- Conception et conduite de projet<br/>
+				- Etude du contexte paysager: flore locale...<br/>
+				- Plan technique<br/>
+				- Plan de plantation<br/>
+				- Palette végétales<br/>
+				- Gestion alternative des eaux pluviales<br/>
+				- Agronomie<br/>
+				- Illustration et communication de projet<br/>
+				</p>
+			</div>
+		</div>
+		<div id="text-membre-second" class="collectif-membre hidden">
+			<div class="box-text-membre">
+<span class="name-second">Beatrice LATZ</span>
+s’est formée aux Beaux art de Lyon en Design d’espace. Une approche
+conceptuelle, technique et expérimentale de la conception urbaine qui lui permet de
+développer un fort attrait pour les usages et la relation du corps dans l’espace. Elle
+décide de continuer son cursus en urbanisme et obtient son Master en aménagement
+et conception urbaine. Cette formation lui permet d’appréhender les différentes échelles
+de projet et de s’initier aux préceptes du développement durable. Ses expériences
+en urbanisme réglementaire et pré-opérationnel ainsi qu’en maîtrise d’oeuvre urbaine
+et paysagère lui permettent de mener des études programmatives dynamiques et de
+concevoir des projets d’aménagement, des études à la réalisation en passant par la
+conception de mobiliers et d’installations. Elle a notamment travaillé à la programmation
+urbaine et paysagère d’un site ludico-marchand, pris en charge la conception d’un square
+en milieu urbain dense, mené différentes études de diagnostic sur des projets de squares
+et de requalification d’espaces urbains, participé à l’aménagement paysager d’un centre
+commercial...<br/>
+<p class="name-second">
+<b>Compétences spécifiques</b><br/>
+- Conception et conduite de projet<br/>
+- Etudes urbaines dynamiques du site au territoire<br/>
+- Programmation d’espace public : usages, mobilité douce, ambiances<br/>
+- Conception mobilier et micro-structure<br/>
+- Illustration et communication de projet<br/>
+</p>
+			</div>
+		</div>
+		<div id="text-membre-third" class="collectif-membre hidden">
+			<div class="box-text-membre">
+<span class="name-third">Pierre-Antoine Gruau</span> a suivi ses études d’architecture en
+France à l’ENSA Paris-Belleville, puis au Edinburgh College of Art en Écosse. C’est en
+participant ensuite avec l’ENSA Paris la Villette, l’Institut Français d’Urbanisme et la ville
+de Hong-Kong, au collectif étudiant MAP, qu’il découvre le projet à l’échelle urbaine et
+l’interaction continue qu’il peut y avoir entre l’architecture et la ville. Il devient architecte
+DPLG en 2006, et a suivi une formation d’urbaniste au CNAM en 2012.
+Ses travaux montrent une volonté de planification urbaine, où le projet fait partie
+du processus d’amélioration de l’environnement, qu’il soit social, économique ou
+architectural.
+Il participe depuis 2006 en tant que mandataire à des concours d’urbanisme lancés par
+des organismes tels que les CAUE ou Europan. L’échelle des projets varie et peut aller
+du réaménagement de place d’un village à la planification d’un quartier d’affaire dans une
+zone historique forte. Il a aussi participé à l’élaboration des cahiers des charges pour la
+requalification des quartiers d’une grande agglomération.
+IL travaille également à des concours d’architecture avec deux autres architectes DPLG<br/>
+<p class="name-third">
+<b>Compétences spécifiques</b><br/>
+- Conception et conduite de projet<br/>
+- Étude et diagnostique du contexte urbain et architectural<br/>
+- Programmation d’espaces publics et d’ensembles architecturaux<br/>
+- Conception architecturale<br/>
+- Illustration et communication de projet<br/>
+</p>
 			</div>
 		</div>
 	</div>
@@ -59,5 +140,11 @@
 		var target = $(this).attr("id").substr("collectif-box-".length);
 		$("[id^='collectif-content-']").addClass("hidden");
 		$("#collectif-content-"+target).removeClass("hidden");
+	});
+
+	$("[id^='membre-']").click(function() {
+		var target = $(this).attr("id");
+		$("[id^='text-membre-']").addClass("hidden");
+		$("#text-"+target).removeClass("hidden");
 	});
 </script>

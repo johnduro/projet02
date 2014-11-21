@@ -766,6 +766,23 @@ li:hover li a:hover
 	width: 704px;
 }
 
+.collectif-membre
+{
+	position: absolute;
+	top: 222px;
+	height: 635px;
+	/* width: 659px; */
+	width: 704px;
+}
+
+.box-text-membre
+{
+	position: absolute;
+	left: 44px;
+	height: 635px;
+	width: 420px;
+}
+
 .box-members
 {
 	float: left;
@@ -793,7 +810,7 @@ li:hover li a:hover
 	background-size: contain;
 }
 
-#name-first
+.name-first
 {
 	color: #bd672e;
 }
@@ -819,7 +836,7 @@ li:hover li a:hover
 	background-size: contain;
 }
 
-#name-second
+.name-second
 {
 	color: #0680b1;
 }
@@ -845,7 +862,7 @@ li:hover li a:hover
 	background-size: contain;
 }
 
-#name-third
+.name-third
 {
 	color: #13806d;
 }
