@@ -21,11 +21,17 @@ body
 	height: 1146px;
 	margin: 0 auto;
 	overflow: hidden;
+    font-family: Arial, Verdana;
 }
 
 .custom-dark-blue
 {
    background: #23607c;
+}
+
+.color-dark-blue
+{
+	color: #23607c;
 }
 
 .custom-light-blue
@@ -34,9 +40,19 @@ body
     background: #46768c;
 }
 
+.color-light-blue
+{
+	color: #46768c;
+}
+
 .custom-clear-blue
 {
 	background: #0680b1;
+}
+
+.color-clear-blue
+{
+	color: #0680b1;
 }
 
 .custom-orange
@@ -44,9 +60,19 @@ body
 	background: #bd672e;
 }
 
+.color-orange
+{
+	color: #bd672e;
+}
+
 .custom-green
 {
 	background: #13806d;
+}
+
+.color-green
+{
+	color: #13806d;
 }
 
 .my-font
@@ -838,7 +864,8 @@ li:hover li a:hover
 
 .name-second
 {
-	color: #0680b1;
+	/* color: #0680b1; */
+	color: #bd672e;
 }
 
 #membre-second:hover .membre-overlay
@@ -864,7 +891,8 @@ li:hover li a:hover
 
 .name-third
 {
-	color: #13806d;
+	/* color: #13806d; */
+	color: #bd672e;
 }
 
 #membre-third:hover .membre-overlay
@@ -879,6 +907,16 @@ li:hover li a:hover
 	left: 5px;
 	position: absolute;
 	/* vertical-align: middle; */
+}
+
+.box-text-collectif
+{
+	position: absolute;
+	height: 857px;
+	/* width: 659px; */
+	width: 652px;
+	left: 44px;
+	overflow: auto;
 }
 
 /*
