@@ -1,14 +1,72 @@
 
 <div class="custom-sidebar">
-	<div id="collectif-box-membres" class="sidebar-box custom-orange hover-box-orange">
-		<span>URBANISME<br/>
-		  PRE-OPERATIONNEL</span>
+	<div id="projets-box-urba" class="sidebar-box custom-orange hover-box-orange current">
+		<span class="sidebar-title-multiline sidebar-title">
+			URBANISME<br/>PRE-OPERATIONNEL
+		</span>
+		<div class="no-display projects-list">
+			<span class="sidebar-projets-multiline-hover">
+				URBANISME<br/>PRE-OPERATIONNEL
+			</span>
+			<div class="projets-link-list">
+			  <a href="" >- projet urba 1</a><br/>
+			  <a href="" >- projet urba 2</a><br/>
+			  <a href="" >- projet blablabla</a><br/>
+			  <a href="" >- projet trololol</a><br/>
+			  <a href="" >- projet titmama</a><br/>
+			  <a href="" >- projet totoala</a><br/>
+			</div>
+		</div>
 	</div>
-	<div id="collectif-box-enjeux" class="sidebar-box custom-clear-blue hover-box-blue">
-		ARCHITECTURE
+	<div id="projets-box-archi" class="sidebar-box custom-clear-blue hover-box-blue sidebar-box-text-oneline">
+		<span class="sidebar-title">ARCHITECTURE</span>
+		<div class="no-display projects-list">
+<!-- <center> -->
+			<span class="sidebar-projets-multiline-hover" style="margin-left:75px;">ARCHITECTURE</span>
+			<div class="projets-link-list">
+			  <a href="" >- projet archi 1</a><br/>
+			  <a href="" >- projet archi 2</a><br/>
+			  <a href="" >- projet baobab</a><br/>
+			  <a href="" >- projet 22222</a><br/>
+			  <a href="" >- projet 3333</a><br/>
+			  <a href="" >- projet jjjjjj</a><br/>
+			</div>
+<!-- </center> -->
+		</div>
 	</div>
-	<div id="collectif-box-domaines" class="sidebar-box custom-green hover-box-green">
-		<span>CONCEPTION URBAINE<br>
-		  PAYSAGERE</span>
+	<div id="projets-box-concept" class="sidebar-box custom-green hover-box-green">
+		<span class="sidebar-title-multiline sidebar-title">
+			CONCEPTION URBAINE<br/>ET PAYSAGERE
+		</span>
+		<div class="no-display projects-list">
+			<span class="sidebar-projets-multiline-hover">
+				CONCEPTION URBAINE<br/>ET PAYSAGERE
+			</span>
+			<div class="projets-link-list">
+			  <a href="" >- projet conception 1</a><br/>
+			  <a href="" >- projet conception 2</a><br/>
+			  <a href="" >- projet 444444</a><br/>
+			  <a href="" >- projet de mangeage sur la loire</a><br/>
+			  <a href="" >- projet 77777</a><br/>
+			  <a href="" >- projet kokokokookooo okokokokokokokoko</a><br/>
+			</div>
+		</div>
 	</div>
 </div>
+
+<script>
+	$("#projets-box-archi").hover(function() {
+		if ($(this).hasClass("sidebar-box-text-oneline"))
+		{
+			$(this).removeClass("sidebar-box-text-oneline");
+
+		}
+	}, function() {
+		if (!$(this).hasClass("current"))
+		{
+			$(this).addClass("sidebar-box-text-oneline");
+
+		}
+
+	});
+</script>

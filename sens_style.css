@@ -145,10 +145,25 @@ a
 	/* border-width: 1px; */
 	/* border-color: red; */
 	color: white;
-	text-align: center;
-	line-height: 280px;
+
+	/* text-align: center; */
+	/* line-height: 280px; */
+
 	/* display: block; */
 	cursor: pointer;
+}
+
+.sidebar-box-text-oneline
+{
+	text-align: center;
+	line-height: 280px;
+}
+
+.sidebar-title-multiline
+{
+	position: absolute;
+	margin-top: 120px;
+	margin-left: 50px;
 }
 
 /*
@@ -360,7 +375,8 @@ li:hover li a:hover
 	border-color: #e3e5e4;
 	color: white;
 	text-decoration: none;
-	text-align: center;
+	/* text-align: center; */
+
 	/* border-color: red; */
 	/* float: left; */
 }
@@ -479,6 +495,7 @@ li:hover li a:hover
 	top: 8px;
 	vertical-align: middle;
 	line-height: 328px;
+	text-align: center;
 }
 
 /* #box-3-2:hover */
@@ -705,11 +722,13 @@ li:hover li a:hover
 .big-box-orange
 {
 	margin-top: 145px;
+ 	margin-left: 75px;
 }
 
 .big-box-green
 {
 	margin-bottom: 130px;
+ 	margin-left: 75px;
 }
 
 /*
@@ -917,6 +936,90 @@ li:hover li a:hover
 	left: 44px;
 	overflow: auto;
 }
+
+/*
+** *********************** PROJETS
+*/
+
+#projets-box-urba
+{
+	/* A SUPPRIMER ? */
+}
+
+#projets-box-urba:hover .sidebar-title
+{
+	display: none;
+}
+
+#projets-box-urba:hover .projects-list
+{
+	display: block;
+}
+
+#projets-box-archi
+{
+	position: relative;
+	top: 8px;
+}
+
+#projets-box-archi:hover .sidebar-title
+{
+	display: none;
+}
+
+#projets-box-archi:hover .projects-list
+{
+	display: block;
+	text-align: initial;
+}
+
+#projets-box-concept
+{
+	position: relative;
+	top: 16px;
+}
+
+#projets-box-concept:hover .sidebar-title
+{
+	display: none;
+}
+
+#projets-box-concept:hover .projects-list
+{
+	display: block;
+}
+
+.no-display
+{
+	display: none;
+}
+
+.sidebar-projets-multiline-hover
+{
+	position: absolute;
+	margin-left: 45px;
+	margin-top: 10px;
+}
+
+.projets-link-list
+{
+	font-size: 15px;
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 15px;
+}
+
+#projet-box /* idem a collectif-text*/
+{
+	position: relative;
+	height: 857px;
+	/* width: 659px; */
+	width: 704px;
+	top: 8px;
+	/* left: 357px; */
+	left: 312px;
+}
+
 
 /*
 ** *********************** 404
