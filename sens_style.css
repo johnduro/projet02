@@ -1020,6 +1020,24 @@ li:hover li a:hover
 	left: 312px;
 }
 
+#projet-text-box
+{
+	position: absolute;
+	left: 44px;
+	height: 288px;
+	width: 420px;
+	float: left;
+	overflow: auto;
+}
+
+#projet-info-box
+{
+	position: relative;
+	left: 168px;
+	height: 288px;
+	width: 234px;
+	float: left;
+}
 
 /*
 ** *********************** 404

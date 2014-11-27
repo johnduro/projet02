@@ -23,6 +23,11 @@ else
     header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
     require 'error404.php';
 }
+/* echo "<pre>"; */
+$data = simplexml_load_file("projetsLayer/resources/projet-urba-1.xml");
+/* $data = yaml_parse_file("resources/projet-urba-1.yml"); */
+/* var_dump($data); */
+/* echo "</pre>"; */
 
 if ($isOk)
 {
