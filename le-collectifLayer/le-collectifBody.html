@@ -1,11 +1,11 @@
 <div class="custom-sidebar">
-	<div id="collectif-box-membres" class="sidebar-box custom-orange hover-box-orange sidebar-box-text-oneline">
+	<div id="collectif-box-membres" class="sidebar-box cursor-pointer custom-orange hover-box-orange sidebar-box-text-oneline selected-box-orange">
 		LES MEMBRES
 	</div>
-	<div id="collectif-box-enjeux" class="sidebar-box custom-clear-blue hover-box-blue sidebar-box-text-oneline">
+	<div id="collectif-box-enjeux" class="sidebar-box cursor-pointer custom-clear-blue hover-box-blue sidebar-box-text-oneline">
 		LES ENJEUX DE L'ATELIER
 	</div>
-	<div id="collectif-box-domaines" class="sidebar-box custom-green hover-box-green sidebar-box-text-oneline">
+	<div id="collectif-box-domaines" class="sidebar-box cursor-pointer custom-green hover-box-green sidebar-box-text-oneline">
 		DOMAINES D'INTERVENTION
 	</div>
 </div>
@@ -194,8 +194,19 @@ public pour faire sens et donner à voir sur les mutations en cours: renouvellem
 <script>
 	$("[id^='collectif-box-']").click(function() {
 		var target = $(this).attr("id").substr("collectif-box-".length);
+		var color;
+		if (target == "membres")
+			color = "orange";
+		else if (target == "enjeux")
+			color = "blue";
+		else if (target == "domaines")
+			color = "green";
 		$("[id^='collectif-content-']").addClass("hidden");
 		$("#collectif-content-"+target).removeClass("hidden");
+		$("[id^='collectif-box-']").removeClass(function (index, css) {
+    return (css.match (/\bselected-box-\S+/g) || []).join(' ');
+});
+		$("#collectif-box-"+target).addClass("selected-box-"+color);
 	});
 
 	$("[id^='membre-']").click(function() {

@@ -1,0 +1,132 @@
+/*
+** *********************** COLLECTIF CSS
+*/
+
+#collectif-box-enjeux
+{
+	position: relative;
+	top: 8px;
+}
+
+#collectif-box-domaines
+{
+	position: relative;
+	top: 16px;
+}
+
+#collectif-text
+{
+	position: relative;
+	height: 857px;
+	width: 704px;
+	top: 8px;
+	left: 312px;
+}
+
+.collectif-content
+{
+	position: absolute;
+	height: 857px;
+	width: 704px;
+}
+
+.collectif-membre
+{
+	position: absolute;
+	top: 222px;
+	height: 635px;
+	width: 704px;
+}
+
+.box-text-membre
+{
+	position: absolute;
+	left: 44px;
+	height: 635px;
+	width: 420px;
+}
+
+.box-members
+{
+	float: left;
+	height: 206px;
+	width: 206px;
+	position: relative;
+ 	border-style: solid;
+	border-width: 4px;
+	cursor: pointer;
+}
+
+#membre-first
+{
+	left: 44px;
+	border-color: #bd672e;
+	background: url(../images/ALDARA.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.name-first
+{
+	color: #bd672e;
+}
+
+#membre-first:hover .membre-overlay
+{
+	display: block;
+}
+
+#membre-second
+{
+	border-color: #0680b1;
+	left: 52px;
+	background: url(../images/BEA.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.name-second
+{
+	color: #bd672e;
+}
+
+#membre-second:hover .membre-overlay
+{
+	display: block;
+}
+
+#membre-third
+{
+	border-color: #13806d;
+	left: 60px;
+	background: url(../images/PAG.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.name-third
+{
+	color: #bd672e;
+}
+
+#membre-third:hover .membre-overlay
+{
+	display: block;
+}
+
+.membre-overlay
+{
+	display: none;
+	top: 60px;
+	left: 5px;
+	position: absolute;
+}
+
+.box-text-collectif
+{
+	position: absolute;
+	height: 857px;
+	width: 652px;
+	left: 44px;
+	overflow: auto;
+}

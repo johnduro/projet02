@@ -1,0 +1,35 @@
+/*
+** *********************** CONTACT CSS
+*/
+
+#contact_text_div
+{
+	height: 857px;
+	width: 341px;
+	color: white;
+	position: relative;
+	left: 8px;
+	top: 8px;
+	float: left;
+    font-family: Arial, Verdana;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.contact_text
+{
+	padding-left: 15px;
+}
+
+#contact_image
+{
+	background: url(../images/Planche-contact_141113.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 857px;
+	width: 659px;
+	position: relative;
+	float: left;
+	left: 16px;
+	top: 8px;
+}

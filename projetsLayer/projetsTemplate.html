@@ -1,0 +1,56 @@
+<div id="projet-box">
+	<div id="projet-text-box">
+		<span class="color-clear-blue"><?php echo strtoupper($data["xml"]->title);?></span>
+		<br/>
+		<p><?php echo $data["xml"]->text;?></p>
+	</div>
+	<div id="projet-info-box">
+		<p id="projet-info-text" class="color-green"><?php echo $data["xml"]->infos;?></p>
+	</div>
+	<div id="projet-img-box">
+	<div style="width:704px; height:467px;">
+		<div class="slider-for">
+				<?php
+					foreach ($data["xml"]->photos->pic as $photo)
+					{
+				?>
+					  <div><img src="/sensurbain/projetsLayer/resources/images-urba-1/<?php echo $photo?>" /></div>
+				<?php
+					}
+				?>
+		</div>
+	</div>
+	<div style="width:704px; height:100px">
+		<div class="slider-nav">
+				<?php
+					foreach ($data["xml"]->photos->pic as $photo)
+					{
+				?>
+					  <div><img src="/sensurbain/projetsLayer/resources/images-urba-1/<?php echo $photo?>" /></div>
+				<?php
+					}
+				?>
+		</div>
+	</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript">
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+});
+</script>

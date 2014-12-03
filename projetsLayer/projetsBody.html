@@ -1,0 +1,54 @@
+
+<div class="custom-sidebar">
+	<div id="projets-box-urba" class="sidebar-box custom-orange hover-box-orange current <?php boxSelected($data, 'urbanisme', 'orange');?>">
+		<span class="sidebar-title-multiline sidebar-title" style="<?php if($data['categorie'] === 'urbanisme') {echo 'display: none;';}?>">
+			URBANISME<br/>PRE-OPERATIONNEL
+		</span>
+		<div class="<?php if($data['categorie'] !== 'urbanisme') {echo 'no-display';}?> projects-list" style="<?php if($data['categorie'] === 'urbanisme') {echo 'display: block;text-align: initial;';}?>">
+			<span class="sidebar-projets-multiline-hover">
+				URBANISME<br/>PRE-OPERATIONNEL
+			</span>
+			<div class="projets-link-list">
+				<?php 	printSidebarProjectsLinks($projectLinks, "urbanisme", $path, $data["projet"]); ?>
+			</div>
+		</div>
+	</div>
+	<div id="projets-box-archi" class="sidebar-box custom-clear-blue hover-box-blue <?php if($data['categorie'] !== 'architecture') {echo 'sidebar-box-text-oneline';} boxSelected($data, 'architecture', 'blue');?>">
+		<span class="sidebar-title" style="<?php if($data['categorie'] === 'architecture') {echo 'display: none;';}?>">ARCHITECTURE</span>
+		<div class="<?php if($data['categorie'] !== 'architecture') {echo 'no-display';}?> projects-list" style="<?php if($data['categorie'] === 'architecture') {echo 'display: block;text-align: initial;';}?>">
+			<span class="sidebar-projets-multiline-hover" style="margin-left:75px;">ARCHITECTURE</span>
+			<div class="projets-link-list">
+		 		<?php 	printSidebarProjectsLinks($projectLinks, "architecture", $path, $data["projet"]); ?>
+			</div>
+		</div>
+	</div>
+	<div id="projets-box-concept" class="sidebar-box custom-green hover-box-green <?php boxSelected($data, 'conception-urbaine', 'green');?>">
+		<span class="sidebar-title-multiline sidebar-title" style="<?php if($data['categorie'] === 'conception-urbaine') {echo 'display: none;';}?>">
+			CONCEPTION URBAINE<br/>ET PAYSAGERE
+		</span>
+		<div class="<?php if($data['categorie'] !== 'conception-urbaine') {echo 'no-display';}?> projects-list" style="<?php if($data['categorie'] === 'conception-urbaine') {echo 'display: block;text-align: initial;';}?>">
+			<span class="sidebar-projets-multiline-hover">
+				CONCEPTION URBAINE<br/>ET PAYSAGERE
+			</span>
+			<div class="projets-link-list">
+		 		<?php 	printSidebarProjectsLinks($projectLinks, "conception-urbaine", $path, $data["projet"]); ?>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$("#projets-box-archi").hover(function() {
+		if ($(this).hasClass("sidebar-box-text-oneline"))
+		{
+			$(this).removeClass("sidebar-box-text-oneline");
+
+		}
+	}, function() {
+		if (!$(this).hasClass("current"))
+		{
+			$(this).addClass("sidebar-box-text-oneline");
+
+		}
+	});
+</script>

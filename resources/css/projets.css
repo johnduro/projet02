@@ -1,0 +1,110 @@
+/*
+** *********************** PROJETS CSS
+*/
+
+#projets-box-urba:hover .sidebar-title
+{
+	display: none;
+}
+
+#projets-box-urba:hover .projects-list
+{
+	display: block;
+}
+
+#projets-box-archi
+{
+	position: relative;
+	top: 8px;
+}
+
+#projets-box-archi:hover .sidebar-title
+{
+	display: none;
+}
+
+#projets-box-archi:hover .projects-list
+{
+	display: block;
+	text-align: initial;
+}
+
+#projets-box-concept
+{
+	position: relative;
+	top: 16px;
+}
+
+#projets-box-concept:hover .sidebar-title
+{
+	display: none;
+}
+
+#projets-box-concept:hover .projects-list
+{
+	display: block;
+}
+
+.no-display
+{
+	display: none;
+}
+
+.sidebar-projets-multiline-hover
+{
+	position: absolute;
+	margin-left: 45px;
+	margin-top: 10px;
+}
+
+.projets-link-list
+{
+	font-size: 15px;
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 15px;
+}
+
+#projet-box
+{
+	position: relative;
+	height: 857px;
+	width: 704px;
+	top: 8px;
+	left: 312px;
+}
+
+#projet-text-box
+{
+	position: absolute;
+	left: 44px;
+	height: 288px;
+	width: 420px;
+	float: left;
+	overflow: auto;
+}
+
+#projet-info-box
+{
+	position: relative;
+	left: 168px;
+	height: 288px;
+	width: 234px;
+	float: left;
+}
+
+#projet-info-text
+{
+	position: relative;
+	top: 16px;
+	left: 10px;
+	width: 224px;
+}
+
+#projet-img-box
+{
+	position: relative;
+	top: 296px;
+	height: 561px;
+	width: 704px;
+}

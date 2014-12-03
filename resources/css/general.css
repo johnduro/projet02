@@ -1,0 +1,348 @@
+/*
+** *********************** GENERAL CSS
+*/
+
+#wrapper_total
+{
+	background: url(../images/pagecouv.jpg);
+	background-repeat: no-repeat;
+	width: 1024px;
+	height: 1146px;
+	margin: 0 auto;
+	overflow: hidden;
+    font-family: Arial, Verdana;
+}
+
+.custom-dark-blue
+{
+   background: #23607c;
+}
+
+.color-dark-blue
+{
+	color: #23607c;
+}
+
+.custom-light-blue
+{
+    background: #46768c;
+}
+
+.color-light-blue
+{
+	color: #46768c;
+}
+
+.custom-clear-blue
+{
+	background: #0680b1;
+}
+
+.color-clear-blue
+{
+	color: #0680b1;
+}
+
+.custom-orange
+{
+	background: #bd672e;
+}
+
+.color-orange
+{
+	color: #bd672e;
+}
+
+.custom-green
+{
+	background: #13806d;
+}
+
+.color-green
+{
+	color: #13806d;
+}
+
+.my-font
+{
+	font-family: Arial;
+	color: white;
+}
+
+#dat_body
+{
+	width: 1024px;
+	height: 873px;
+	background-color: rgba(227, 229, 228, 0.8);
+}
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+.hover-box-orange:hover
+{
+	background: url(../images/PLANfondOrangel-01.jpg);
+	background-size: contain;
+}
+
+.selected-box-orange
+{
+	background: url(../images/PLANfondOrangel-01.jpg);
+	background-size: contain;
+}
+
+.hover-box-blue:hover
+{
+	background: url(../images/fond_design.png);
+	background-size: contain;
+}
+
+.selected-box-blue
+{
+	background: url(../images/fond_design.png);
+	background-size: contain;
+}
+
+.hover-box-green:hover
+{
+	background: url(../images/PLANfondVert-01.jpg);
+	background-size: contain;
+}
+
+.selected-box-green
+{
+	background: url(../images/PLANfondVert-01.jpg);
+	background-size: contain;
+}
+
+.hidden
+{
+	visibility: hidden;
+}
+
+.custom-sidebar
+{
+	height: 857px;
+	width: 296px;
+	color: white;
+	position: relative;
+	left: 8px;
+	top: 8px;
+	float: left;
+    font-family: Arial, Verdana;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.sidebar-box
+{
+	width: 280px;
+	height: 280px;
+	color: white;
+}
+
+.cursor-pointer
+{
+	cursor: pointer;
+}
+
+.sidebar-box-text-oneline
+{
+	text-align: center;
+	line-height: 280px;
+}
+
+.sidebar-title-multiline
+{
+	position: absolute;
+	margin-top: 120px;
+	margin-left: 50px;
+}
+
+/*
+** *********************** HEADER
+*/
+
+#dat_header
+{
+	width: 1024px;
+	height: 183px;
+	display: inline-block;
+}
+
+#logo_div
+{
+	background: url(../images/logo-sens-urbain-02.png);
+	background-repeat: no-repeat;
+	background-size: 250px 163px; /*NEW*/
+	width: 307px;
+	height: 165px;
+	text-indent: -9999px;
+}
+
+#logo_link
+{
+	display: block;
+	width: 307px;
+	height: 183px;
+	float: left;
+	position: relative;
+	left: 30px;
+}
+
+#nav_div
+{
+	width: 667px;
+	height: 55px;
+	background-color: #41738c;
+	float: left;
+	position: relative;
+	top: 132px;
+	left: 50px;
+}
+
+#nav_bar
+{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    width: 647px;
+    height: 35px;
+}
+
+#menu
+{
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.center-div
+{
+    padding: 9px 0px 0px 30px;
+}
+
+ul li
+{
+    display: block;
+    position: relative;
+    float: left;
+}
+
+ul li a
+{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 15px 5px 15px;
+    white-space: nowrap;
+}
+
+.item-list
+{
+    padding: 1px 0px 0px 0px;
+    display: none;
+	z-index: 999;
+}
+
+.custom-ml
+{
+     margin-left: 1px;
+}
+
+.nav-hover:hover
+{
+    background: #bd672e;
+}
+
+li:hover .item-list
+{
+    display: block;
+    position: absolute;
+}
+
+li:hover .item
+{
+    float: none;
+    font-size: 12px;
+}
+
+li:hover .item
+{
+	background: #41738c;
+}
+
+li:hover li a:hover
+{
+    background: #95A9B1;
+}
+
+.button-height
+{
+    height: 35px;
+
+}
+
+
+/*
+** *********************** FOOTER
+*/
+
+#dat_footer
+{
+	width: 1024px;
+	height: 90px;
+}
+
+#footer_div
+{
+	width: 1024px;
+	position: relative;
+	height: 70px;
+	display: block;
+}
+
+#follow_div
+{
+	float: left;
+	height: 70px;
+	width: 100px;
+	position: relative;
+	left: 300px;
+	top: 5px;
+}
+
+#parter
+{
+	float: left;
+	position: relative;
+	left: 400px;
+	top: 5px;
+}
+
+#legal
+{
+	float: left;
+	position: relative;
+	left: 500px;
+	top: 10px;
+}
+
+/*
+** *********************** 404
+*/
+
+#page-error
+{
+	width: 1024px;
+	height: 873px;
+	background: url(../images/page_404.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
