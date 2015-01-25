@@ -1,0 +1,47 @@
+/*
+** Fichier d'aide
+*/
+
+accessible à l'adresse "<url du site>/help.txt"
+
+/**** NE PAS METTRE DE LOGINS OU MOTS DE PASSES DANS CE FICHIER ! ****/
+
+
+Rajouter un projet :
+
+	-	Copier le dossier "ici-nom-de-votre-projet", se trouvant dans resources/template-projets/, dans le dossier de la catégorie ou vous voulez rajouter votre projet.
+		Les catégories se trouvent dans le dossier projetsLayer/resources/, NE PAS CHANGER LES NOMS DES CATEGORIES !!
+
+	-	Changer le nom du dossier par le nom du projet en mettant des tirets '-' à la place des espaces.
+		Pour mettre des ' utiliser l'underscore : _ (touche 8)
+		Attention ! Le nom apparaitra exactement comme le nom du dossier, majuscule/minuscule comprises.
+
+	-	Dans le dossier du projet se trouve un dossier images, mettre les images en vrac dans celui-ci.
+
+	-	Editer ensuite le fichier infos.xml, pour cela le bloc note est conseillé, evitez WORD ou équivalent. NE SURTOUT PAS CHANGER SON NOM !!
+		Il faut remplir les espaces entre les balises (par exemple une balise title se présente comme ceci : <title></title>).
+		Il faut absolument que les balises soient ouverte : <title> puis refermée : </title>
+
+	-	La balise <title> représente le titre se trouvant au dessus du texte.
+		La balise <text> représente le texte concernant le projet.
+		La balise <infos> représente le bloc d'information se situant en haut à droite.
+		La balise <photos> regroupe tous les noms des photos, chacun entre des balise <pic> (faire attention à l'extension .jpg .png etc..)
+
+	-	Mettre tous les textes sur une seule ligne (!)
+		Si vous voulez que le texte revienne a la ligne sur le site il faut mettre une balise <br/> a l'endroit voulu, inutile de revenir
+		a la ligne dans le bloc note. N'hesitez pas a regarder les projets déjà mis en ligne pour vous en inspirer.
+
+	-	Si tout est rempli votre projet est maintenant sur le site !
+		En cas d'erreur vérifier que les balises sont bien refermée et revoir toutes les étapes.
+
+	-	Seulement les photos dans le fichier infos.xml seront affiches sur le site.
+
+
+Supprimer un projet :
+
+	-	Il est possible de garder le projet sur le serveur du site sans qu'il apparaisse sur celui-ci, tout simplement en mettant un "." devant le nom du dossier.
+		Par exemple : "ici-nom-de-votre-projet" devient ".ici-nom-de-votre-projet" et ainsi n'apparait plus sur le site, pour le faire revenir enlever le point.
+
+	-	Il est aussi possible de supprimer le dossier du projet tout simplement, mais s'il n'y a pas de sauvegarde il est perdu.
+
+		ATTENTION !! NE SUPPRIMEZ PAS LES DOSSIER/PROJETS AYANT UN LIEN SUR LA PAGE D'ACCEUIL, CEUX CI NE MARCHERAIENT PLUS !!

@@ -84,13 +84,13 @@ a
 
 .hover-box-orange:hover
 {
-	background: url(../images/PLANfondOrangel-01.jpg);
+	background: url(../images/PLANfondOrangel-01.png);
 	background-size: contain;
 }
 
 .selected-box-orange
 {
-	background: url(../images/PLANfondOrangel-01.jpg);
+	background: url(../images/PLANfondOrangel-01.png);
 	background-size: contain;
 }
 
@@ -108,13 +108,13 @@ a
 
 .hover-box-green:hover
 {
-	background: url(../images/PLANfondVert-01.jpg);
+	background: url(../images/PLANfondVert-01.png);
 	background-size: contain;
 }
 
 .selected-box-green
 {
-	background: url(../images/PLANfondVert-01.jpg);
+	background: url(../images/PLANfondVert-01.png);
 	background-size: contain;
 }
 
@@ -125,7 +125,6 @@ a
 
 .custom-sidebar
 {
-	height: 857px;
 	width: 296px;
 	color: white;
 	position: relative;
@@ -177,7 +176,7 @@ a
 {
 	background: url(../images/logo-sens-urbain-02.png);
 	background-repeat: no-repeat;
-	background-size: 250px 163px; /*NEW*/
+	background-size: 250px 163px;
 	width: 307px;
 	height: 165px;
 	text-indent: -9999px;

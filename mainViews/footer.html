@@ -3,20 +3,20 @@
 				<div id="footer_div" class="custom-dark-blue">
 					<div id="follow_div" class="my-font">
 						Nous suivre
-						<a href="">
+						<a href="https://www.facebook.com/sensurbains/timeline" target="_blank">
 							<!-- <img src="images/FB-f-Logo__blue_50.png" alt="Facebook" width="35px" height="35px"></img> -->
 							<img src="<?php echo $path['logo_fb'] ?>" alt="Facebook" width="35px" height="35px"></img>
 						</a>
 						<a href="">
-							<img src="<?php echo $path['logo_twit'] ?>" alt="Twitter" witdth="35px" height="35px"></img>
+							<img src="<?php echo $path['logo_lkdin'] ?>" alt="LinkedIn" witdth="35px" height="35px"></img>
 							<!-- <img src="images/twitter-logo.png" alt="Twitter" witdth="35px" height="35px"></img> -->
 						</a>
 					</div>
 					<div id="parter" class="my-font">
 						Nos partenaires<br/>
 						<small>
-							- <b>Dejà Designers</b>: collectif de designer<br/>
-							- <b>Gabarit</b>: collectif d'architectes
+							- <a href="http://www.dejadesigners.com" target="_blank"><b>Dejà Designers</b>: collectif de designer</a>
+							<!--<br/> - <b>Gabarit</b>: collectif d'architectes -->
 						</small>
 					</div>
 					<div id="legal" class="my-font">
@@ -26,4 +26,10 @@
             </div>
         </div>
     </body>
+	<?php
+		foreach ($path['end-js'] as $endJS)
+		{
+			echo "<script type='text/javascript' src='$endJS'></script>";
+		}
+	?>
 </html>

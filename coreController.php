@@ -4,20 +4,21 @@ $baseUrl = "/sensurbain/";
 $path = array();
 
 $path["css"][] = $baseUrl."resources/css/general.css";
+$path['css'][] = $baseUrl."resources/css/font-awesome-4.2.0/css/font-awesome.min.css";
 $path['start-js'][] = $baseUrl."resources/js/jquery-1.11.1.min.js";
-$path['end-js'][] = array();
+$path['end-js'] = array();
 
 $path["home"] = $baseUrl;
 $path["contact"] = $baseUrl."contact/";
 $path["leCollectif"] = $baseUrl."le-collectif/";
 
-$path['logo_fb'] = $baseUrl."images/FB-f-Logo__blue_50.png";
-$path['logo_twit'] = $baseUrl."images/twitter-logo.png";
+$path['logo_fb'] = $baseUrl."resources/images/FB-f-Logo__blue_50.png";
+$path['logo_lkdin'] = $baseUrl."resources/images/LinkedIn-InBug-2CRev.png";
 
 $path['projets']['index'] = $baseUrl."projets/";
-$path['projets']['urbanisme'] = $path['projets']['index']."urbanisme/";
-$path['projets']['architecture'] = $path['projets']['index']."architecture/";
-$path['projets']['conception-urbaine'] = $path['projets']['index']."conception-urbaine/";
+$path['projets']['urbanisme']['index'] = $path['projets']['index']."urbanisme/";
+$path['projets']['architecture']['index'] = $path['projets']['index']."architecture/";
+$path['projets']['conception-urbaine']['index'] = $path['projets']['index']."conception-urbaine/";
 
 $pageSelected = "";
 

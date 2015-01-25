@@ -2,19 +2,19 @@
 
 <html>
     <head>
-        <meta charset="utf8">
+        <meta charset="utf-8">
         <title>Sens Urbains</title>
 		<?php
 			foreach ($path["css"] as $css)
 			{
-        		echo "<link href='$css' rel='stylesheet'>";
+        		echo "<link href='$css' rel='stylesheet' />";
 			}
 			foreach ($path["start-js"] as $startJs)
 			{
         		echo "<script src='$startJs' rel='stylesheet'></script>";
 			}
 		?>
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
     </head>
 
     <body>
@@ -29,9 +29,9 @@
 							<li class="button-height custom-dark-blue nav-hover <?php if ($pageSelected === 'projets') {echo 'custom-orange';}?>" style="width: 125px">
 								<a class="button-height center-div" href="<?php echo $path['projets']['index'];?>">PROJETS</a>
 								<ul class="item-list">
-									<li class="item"><a href="<?php echo $path['projets']['urbanisme'];?>">- Urbanisme pré-op</a></li>
-									<li class="item"><a href="<?php echo $path['projets']['architecture'];?>">- Architecture</a></li>
-									<li class="item"><a href="<?php echo $path['projets']['conception-urbaine'];?>">- Conception urbaine et paysagère</a></li>
+									<li class="item"><a href="<?php echo $path['projets']['urbanisme']['index'];?>">- Urbanisme pré-op</a></li>
+									<li class="item"><a href="<?php echo $path['projets']['architecture']['index'];?>">- Architecture</a></li>
+									<li class="item"><a href="<?php echo $path['projets']['conception-urbaine']['index'];?>">- Conception urbaine et paysagère</a></li>
 								</ul>
 							</li>
 							<li class="button-height custom-dark-blue nav-hover custom-ml <?php if ($pageSelected === 'le-collectif') {echo 'custom-orange';}?>" style="width: 160px">

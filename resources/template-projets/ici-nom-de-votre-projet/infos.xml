@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<title> METTRE LE TITRE ICI</title>
+    <text><![CDATA[ METTRE LE TEXTE ICI ]]></text>
+    <infos><![CDATA[ METTRE LE BLOC INFO ICI ]]></infos>
+	<photos>
+	    <pic>nom-photo-1.jpg</pic>
+	    <pic>nom-photo-2.jpg</pic>
+	    <pic> etc ... </pic>
+	</photos>
+</data>

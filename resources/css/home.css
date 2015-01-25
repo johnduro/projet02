@@ -69,6 +69,14 @@
 	left: 8px;
  	float: left;
 	top: 8px;
+	background: url(../images/entre-les-pins-NB.png);
+	background-size: contain;
+}
+
+#box-4-1:hover
+{
+	background: url(../images/entre-les-pins-C.png);
+	background-size: contain;
 }
 
 #box-5-1

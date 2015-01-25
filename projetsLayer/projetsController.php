@@ -4,13 +4,12 @@ $isOk = FALSE;
 $data = array();
 if (preg_match("#projets\/$#isU", $_SERVER['REDIRECT_URL']) || preg_match("#projets\/urbanisme\/$#isU", $_SERVER['REDIRECT_URL']))
 {
-    header("Status: 200 OK", false, 200);
     $isOk = TRUE;
     $data["categorie"] = "urbanisme";
 }
 else if (preg_match("#projets/urbanisme/#isU", $_SERVER['REDIRECT_URL']))
 {
-    preg_match("#projets\/urbanisme\/([a-zA-Z0-9\-]*)$#isU", $_SERVER['REDIRECT_URL'], $ret, PREG_OFFSET_CAPTURE);
+    preg_match("#projets\/urbanisme\/([a-zA-Z0-9\-_]*)$#isU", $_SERVER['REDIRECT_URL'], $ret, PREG_OFFSET_CAPTURE);
     if (isset($ret[1][0]))
     {
         if (file_exists("projetsLayer/resources/urbanisme/".$ret[1][0]))
@@ -25,13 +24,12 @@ else if (preg_match("#projets/architecture/#isU", $_SERVER['REDIRECT_URL']))
 {
     if (preg_match("#projets/architecture/$#isU", $_SERVER['REDIRECT_URL']))
     {
-        header("Status: 200 OK", false, 200);
         $isOk = TRUE;
         $data["categorie"] = "architecture";
     }
     else
     {
-        preg_match("#projets\/architecture\/([a-zA-Z0-9\-]*)$#isU", $_SERVER['REDIRECT_URL'], $ret, PREG_OFFSET_CAPTURE);
+        preg_match("#projets\/architecture\/([a-zA-Z0-9\-_]*)$#isU", $_SERVER['REDIRECT_URL'], $ret, PREG_OFFSET_CAPTURE);
         if (isset($ret[1][0]))
         {
             if (file_exists("projetsLayer/resources/architecture/".$ret[1][0]))
@@ -47,13 +45,12 @@ else if (preg_match("#projets/conception-urbaine/#isU", $_SERVER['REDIRECT_URL']
 {
     if (preg_match("#projets/conception-urbaine/$#isU", $_SERVER['REDIRECT_URL']))
     {
-        header("Status: 200 OK", false, 200);
         $isOk = TRUE;
         $data["categorie"] = "conception-urbaine";
     }
     else
     {
-        preg_match("#projets\/conception-urbaine\/([a-zA-Z0-9\-]*)$#isU", $_SERVER['REDIRECT_URL'], $ret, PREG_OFFSET_CAPTURE);
+        preg_match("#projets\/conception-urbaine\/([a-zA-Z0-9\-_]*)$#isU", $_SERVER['REDIRECT_URL'], $ret, PREG_OFFSET_CAPTURE);
         if (isset($ret[1][0]))
         {
             if (file_exists("projetsLayer/resources/conception-urbaine/".$ret[1][0]))
@@ -68,14 +65,8 @@ else if (preg_match("#projets/conception-urbaine/#isU", $_SERVER['REDIRECT_URL']
 else
 {
     header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
-    /* require 'error404.php'; */
     require 'mainViews/error404.php';
 }
-
-/* foreach ($data->photos->pic as $photo) */
-/*     { */
-/*         echo $photo; */
-/*     } */
 
 if ($isOk)
 {
@@ -83,13 +74,15 @@ if ($isOk)
     $projectDirs["architecture"] = scandir("projetsLayer/resources/architecture");
     $projectDirs["conception-urbaine"] = scandir("projetsLayer/resources/conception-urbaine");
     $projectLinks = array();
+    $toReplace = array("-", "_");
+    $replaceWith = array(" ", "'");
     foreach ($projectDirs as $type => $dirs)
     {
         foreach ($dirs as $dirname)
         {
             if ($dirname[0] != ".")
             {
-                $projectLinks[$type][] = array("name" => str_replace("-", " ", $dirname), "link" => $dirname);
+                $projectLinks[$type][] = array("name" => str_replace($toReplace, $replaceWith, $dirname), "link" => $dirname);
                 if (!isset($projectLinks["defaultProject"][$type]))
                 {
                     $projectLinks["defaultProject"][$type] = $dirname;
@@ -117,9 +110,13 @@ if ($isOk)
 
     if ($isOk)
     {
+        header("Status: 200 OK", false, 200);
+        $projectSelectedPath = $baseUrl."projetsLayer/resources/".$data["categorie"]."/".$data["projet"]."/";
         $data["xml"] = simplexml_load_file("projetsLayer/resources/".$data["categorie"]."/".$data["projet"]."/infos.xml");
         $pageSelected = "projets";
         $path["css"][] = $baseUrl."resources/css/projets.css";
+        $path['end-js'][] = $baseUrl."resources/js/jquery.ui.effect.min.js";
+        $path['end-js'][] = $baseUrl."resources/js/diaporama.js";
         include_once('mainViews/header.html');
         include_once('projetsBody.html');
         include_once('projetsTemplate.html');
@@ -128,13 +125,13 @@ if ($isOk)
     else
     {
         header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
-        require 'error404.php';
+        require 'mainViews/error404.php';
     }
 }
 else
 {
     header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
-    require 'error404.php';
+    require 'mainViews/error404.php';
 }
 
 function printSidebarProjectsLinks($projectLinks, $categorie, $path, $projet)
@@ -145,7 +142,7 @@ function printSidebarProjectsLinks($projectLinks, $categorie, $path, $projet)
         {
             if ($link["link"] === $projet)
                 echo "<b>";
-            echo "<a href=".$path["projets"][$categorie].$link["link"].">- ".$link["name"]."<a><br/>";
+            echo "<a href=".$path["projets"][$categorie]['index'].$link["link"].">- ".$link["name"]."</a><br/>";
             if ($link["link"] === $projet)
                 echo "</b>";
         }
